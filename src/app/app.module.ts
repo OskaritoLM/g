@@ -6,13 +6,14 @@ import { AppComponent } from './app.component';
 import { NavarComponent } from './componentes/navar/navar.component';
 import { FooterComponent } from './componentes/footer/footer.component';
 import { HomeComponent } from './componentes/home/home.component';
-
+import { RegistroComponent } from './componentes/registro/registro.component';
 @NgModule({
   declarations: [
     AppComponent,
     NavarComponent,
     FooterComponent,
-    HomeComponent
+    HomeComponent,
+    RegistroComponent,
   ],
   imports: [
     BrowserModule,
