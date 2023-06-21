@@ -7,6 +7,8 @@ import { NavarComponent } from './componentes/navar/navar.component';
 import { FooterComponent } from './componentes/footer/footer.component';
 import { HomeComponent } from './componentes/home/home.component';
 import { RegistroComponent } from './componentes/registro/registro.component';
+import { AdminComponent } from './componentes/admin/admin.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -14,6 +16,7 @@ import { RegistroComponent } from './componentes/registro/registro.component';
     FooterComponent,
     HomeComponent,
     RegistroComponent,
+    AdminComponent
   ],
   imports: [
     BrowserModule,
