@@ -16,6 +16,7 @@
         <label class="form-check-label" for="exampleCheck1">Recuérdame</label>
       </div>
       <button type="submit" class="btn btn-primary" (click)="verificarCredenciales()">Iniciar Sesión</button>
+      <div class="error">{{ errorInicioSesion }}</div>
       <div id="emailHelp" class="form-text">
         Al registrarte aceptas nuestras políticas de uso, condiciones y privacidad.
         ¿No tienes una cuenta? <a href="/registrar">Regístrate</a>

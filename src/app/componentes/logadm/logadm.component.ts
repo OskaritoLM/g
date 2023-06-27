@@ -10,6 +10,8 @@ import { Router } from '@angular/router';
 export class LogadmComponent {
   usuario: string = '';
   contrasena: string = '';
+  errorInicioSesion: string = '';
+
 
   constructor(private authService: AuthService, private router: Router) { }
 
@@ -19,6 +21,7 @@ export class LogadmComponent {
       this.router.navigate(['/admin']);
     } else {
       // Poner una mamada no se x 
+      this.errorInicioSesion = 'Tu no eres el admin >:p';
     }
   }
 }
