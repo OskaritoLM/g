@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { NavarComponent } from './componentes/navar/navar.component';
 import { FooterComponent } from './componentes/footer/footer.component';
 import { HomeComponent } from './componentes/home/home.component';
+import { RegistroComponent } from './componentes/registro/registro.component';
 import { AdminComponent } from './componentes/admin/admin.component';
 
 @NgModule({
@@ -14,6 +15,7 @@ import { AdminComponent } from './componentes/admin/admin.component';
     NavarComponent,
     FooterComponent,
     HomeComponent,
+    RegistroComponent,
     AdminComponent
   ],
   imports: [
