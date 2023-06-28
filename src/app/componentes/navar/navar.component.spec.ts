@@ -1,5 +1,4 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { NavarComponent } from './navar.component';
 
 describe('NavarComponent', () => {
