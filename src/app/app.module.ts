@@ -6,13 +6,21 @@ import { AppComponent } from './app.component';
 import { NavarComponent } from './componentes/navar/navar.component';
 import { FooterComponent } from './componentes/footer/footer.component';
 import { HomeComponent } from './componentes/home/home.component';
+import { ProductosComponent } from './componentes/productos/productos.component';
+import { AzulejosComponent } from './componentes/azulejos/azulejos.component';
+import { VajillasComponent } from './componentes/vajillas/vajillas.component';
+import { JarronesComponent } from './componentes/jarrones/jarrones.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavarComponent,
     FooterComponent,
-    HomeComponent
+    HomeComponent,
+    ProductosComponent,
+    AzulejosComponent,
+    VajillasComponent,
+    JarronesComponent
   ],
   imports: [
     BrowserModule,
