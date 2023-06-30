@@ -12,6 +12,9 @@ import { JarronesComponent } from './componentes/jarrones/jarrones.component';
 import { RegistroComponent } from './componentes/registro/registro.component';
 import { AdminComponent } from './componentes/admin/admin.component';
 import { LogadmComponent } from './componentes/logadm/logadm.component';
+import { LogprovComponent } from './componentes/logprov/logprov.component';
+import { HomeUserComponent } from './componentes/home-user/home-user.component';
+import { ProdUserComponent } from './componentes/prod-user/prod-user.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +27,10 @@ import { LogadmComponent } from './componentes/logadm/logadm.component';
     JarronesComponent
     RegistroComponent,
     AdminComponent,
-    LogadmComponent
+    LogadmComponent,
+    LogprovComponent,
+    HomeUserComponent,
+    ProdUserComponent
   ],
   imports: [
     BrowserModule,

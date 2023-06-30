@@ -9,6 +9,7 @@ import { LoginComponent } from './componentes/login/login.component';
 import { RegistroComponent } from './componentes/registro/registro.component';
 import { AdminComponent } from './componentes/admin/admin.component';
 import { LogadmComponent } from './componentes/logadm/logadm.component';
+import { LogprovComponent } from './componentes/logprov/logprov.component';
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
@@ -16,11 +17,12 @@ const routes: Routes = [
   {path: 'productos',component:ProductosComponent},
   {path:'azulejos', component:AzulejosComponent},
   {path:'vajillas',component:VajillasComponent},
-  {path:'jarrones',component:JarronesComponent}
+  {path:'jarrones',component:JarronesComponent},
   {path: 'login', component: LoginComponent},
   {path: 'registro', component:RegistroComponent},
   {path: 'admin', component: AdminComponent},
   {path: 'logadm', component: LogadmComponent},
+  {path: 'logprov', component: LogprovComponent},
 ];
 
 @NgModule({
