@@ -24,7 +24,7 @@ import { ProdUserComponent } from './componentes/prod-user/prod-user.component';
     ProductosComponent,
     AzulejosComponent,
     VajillasComponent,
-    JarronesComponent
+    JarronesComponent,
     RegistroComponent,
     AdminComponent,
     LogadmComponent,
