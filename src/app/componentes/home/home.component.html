@@ -1,13 +1,7 @@
-<nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+<nav class="navbar navbar-expand-sm bg-primary" data-bs-theme="dark">
   <div class="container-fluid">
-    <a class="navbar-brand" href="">
-      <img src="assets/LogoCG.jpg" alt="Logo" width="40px" height="40px"> Crafts Gallery
-    </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarColor01">
-      <ul class="navbar-nav ms-auto"> <!-- Changed `me-auto` to `ms-auto` to align items to the right -->
+    <div class="navbar-collapse justify-content-start"> <!-- Alineación a la izquierda -->
+      <ul class="navbar-nav">
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Iniciar Sesión</a>
           <div class="dropdown-menu">
@@ -20,8 +14,22 @@
         </li>
       </ul>
     </div>
+    <div class="navbar-brand d-flex justify-content-center"> <!-- Alineación en el centro -->
+      <a href="">
+        <img src="assets/LogoCG.jpg" alt="Logo" width="40px" height="40px" class="mr-2">
+        <strong>Crafts Gallery</strong>
+      </a>
+    </div>
+    <div class="navbar-collapse justify-content-end"> <!-- Alineación a la derecha -->
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Ayuda</a>
+        </li>
+      </ul>
+    </div>
   </div>
 </nav>
+
 
 <h1>¡Bienvenido!</h1>
 <br />
