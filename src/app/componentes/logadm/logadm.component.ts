@@ -10,19 +10,18 @@ import { Router } from '@angular/router';
 export class LogadmComponent {
   usuario: string = '';
   contrasena: string = '';
+  role: string = '';
   errorInicioSesion: string = '';
-
 
   constructor(private authService: AuthService, private router: Router) { }
 
   verificarCredenciales() {
-    if (this.usuario === 'oscar@cprueba.com' && this.contrasena === 'linux') {
-      // Redirigir al usuario a la ruta /admin
+    this.authService.login(this.usuario, this.contrasena, 'admin');
+
+    if (this.authService.getIsLoggedIn()) {
       this.router.navigate(['/admin']);
     } else {
-      // Poner una mamada no se x 
-      this.errorInicioSesion = 'Tu no eres el admin >:p';
+      this.errorInicioSesion = 'Tú no eres el admin >:p';
     }
   }
 }
-

@@ -15,6 +15,9 @@ import { LogadmComponent } from './componentes/logadm/logadm.component';
 import { LogprovComponent } from './componentes/logprov/logprov.component';
 import { HomeUserComponent } from './componentes/home-user/home-user.component';
 import { ProdUserComponent } from './componentes/prod-user/prod-user.component';
+import { NavarComponent } from './componentes/navar/navar.component';
+import { LoginComponent } from './componentes/login/login.component';
+import { CommonModule } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -30,12 +33,15 @@ import { ProdUserComponent } from './componentes/prod-user/prod-user.component';
     LogadmComponent,
     LogprovComponent,
     HomeUserComponent,
-    ProdUserComponent
+    ProdUserComponent,
+    NavarComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    CommonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

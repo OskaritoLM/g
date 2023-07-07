@@ -11,13 +11,14 @@ export class LogprovComponent {
   usuario: string = '';
   contrasena: string = '';
   errorInicioSesion: string = '';
-
+  isLoggedIn: boolean = false;
 
   constructor(private authService: AuthService, private router: Router) { }
 
   verificarCredenciales() {
     if (this.usuario === 'noahp@cprueba.com' && this.contrasena === 'linux') {
       // Redirigir al usuario a la ruta /admin
+      this.isLoggedIn = true;
       this.router.navigate(['/proveedor']);
     } else {
       // Poner una mamada no se x 
