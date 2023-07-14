@@ -17,6 +17,8 @@ import { HomeUserComponent } from './componentes/home-user/home-user.component';
 import { ProdUserComponent } from './componentes/prod-user/prod-user.component';
 import { LoginComponent } from './componentes/login/login.component';
 import { CommonModule } from '@angular/common';
+import { NavusrComponent } from './componentes/navusr/navusr.component';
+import { NavbasicComponent } from './componentes/navbasic/navbasic.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +35,9 @@ import { CommonModule } from '@angular/common';
     LogprovComponent,
     HomeUserComponent,
     ProdUserComponent,
-    LoginComponent
+    LoginComponent,
+    NavusrComponent,
+    NavbasicComponent
   ],
   imports: [
     BrowserModule,
