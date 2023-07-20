@@ -1,10 +1,67 @@
 h1, h2{
     text-align: center;
 }
-.card-img {
-    height: 250px; /* Establece la altura deseada para las imágenes */
-    object-fit: cover; /* Ajusta la imagen dentro del contenedor manteniendo su proporción */
+
+
+.custom-img {
+    width: 500px;
+    height: 500px; /* Ajustar la altura según tus preferencias */
+    object-fit: cover; /* Para asegurarse de que la imagen cubra el contenedor */
+    object-position: center; /* Centrar la imagen verticalmente */
 }
-.container{
-    align-items: center;
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    font-size: 30px; /* Ajustar el tamaño de los iconos */
+    background-color: #f0f0f0; /* Cambiar el color de fondo */
+    color: #c042b6; /* Cambiar el color del icono */
+    border-radius: 50%; /* Hacer los botones redondos */
+    padding: 8px; /* Ajustar el espaciado interior para que sean más grandes */
+  }
+  .carousel-control-prev-icon:hover,
+  .carousel-control-next-icon:hover {
+    background-color: #c042b6;
+    color: #f0f0f0;
 }
+.carousel-control-prev,
+  .carousel-control-next {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .carousel-indicators {
+    text-align: center; /* Centrar los indicadores */
+  }
+  .carousel-indicators button {
+    width: 12px; /* Ajustar el tamaño de los puntos */
+    height: 12px;
+    border-radius: 50%; /* Hacer los puntos redondos */
+    background-color: #bbb; /* Color de fondo de los puntos inactivos */
+    border: none; /* Eliminar el borde */
+    margin: 0 6px; /* Ajustar el espaciado entre los puntos */
+    margin-bottom: -50px;
+    transition: background-color 0.3s ease; /* Agregar una transición suave */
+  }
+  .carousel-indicators .active {
+    background-color: #c042b6; /* Color de fondo del punto activo */
+  }
+  .carousel-caption {
+    background-color: rgba(232, 112, 243, 0.7); /* Agregar un fondo semi-transparente */
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+  .carousel-caption h3 {
+    font-size: 24px;
+    color: #fff;
+    margin-bottom: 5px;
+  }
+
+  .carousel-caption p {
+    font-size: 14px;
+    color: #fff;
+    margin: 0;
+  }
+  .btn-custom {
+    background-color: #c042b6; /* Color de fondo del botón */
+    color: #fff; /* Color del texto del botón */
+  }
+  
