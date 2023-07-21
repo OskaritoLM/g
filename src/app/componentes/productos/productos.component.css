@@ -1,0 +1,7 @@
+h1, h2{
+    text-align: center;
+}
+.card-img {
+    height: 200px; /* Establece la altura deseada para las imágenes */
+    object-fit: cover; /* Ajusta la imagen dentro del contenedor manteniendo su proporción */
+}
