@@ -19,7 +19,8 @@ import { LoginComponent } from './componentes/login/login.component';
 import { CommonModule } from '@angular/common';
 import { NavusrComponent } from './componentes/navusr/navusr.component';
 import { NavbasicComponent } from './componentes/navbasic/navbasic.component';
-
+import { TiposComponent } from './componentes/tipos/tipos.component';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
@@ -37,13 +38,15 @@ import { NavbasicComponent } from './componentes/navbasic/navbasic.component';
     ProdUserComponent,
     LoginComponent,
     NavusrComponent,
-    NavbasicComponent
+    NavbasicComponent,
+    TiposComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    CommonModule
+    CommonModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

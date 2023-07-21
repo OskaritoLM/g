@@ -10,6 +10,7 @@ import { RegistroComponent } from './componentes/registro/registro.component';
 import { AdminComponent } from './componentes/admin/admin.component';
 import { LogadmComponent } from './componentes/logadm/logadm.component';
 import { LogprovComponent } from './componentes/logprov/logprov.component';
+import { TiposComponent } from './componentes/tipos/tipos.component';
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
@@ -23,6 +24,7 @@ const routes: Routes = [
   {path: 'admin', component: AdminComponent},
   {path: 'logadm', component: LogadmComponent},
   {path: 'logprov', component: LogprovComponent},
+  {path: 'tipos', component: TiposComponent},
 ];
 
 @NgModule({
