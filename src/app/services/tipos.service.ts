@@ -1,18 +1,18 @@
 import { Injectable } from '@angular/core';
-import { Tipos } from 'src/models/tipos';
+import { Tipos } from 'src/app/models/tipos';
 import { HttpClient } from '@angular/common/http'
 
 @Injectable({
   providedIn: 'root'
 })
 export class TiposService {
-  public tipos:Tipos={
+  public tipo:Tipos={
     id_tipo:0, tipo:''
   };
 
-  public tipo:Tipos[]=[];
+  public tipos:Tipos[]=[];
 
-  URL_API='http://localhost:3000/tipos/'
+  URL_API='http://localhost:3000/tipos/';
 
   constructor(private http: HttpClient) { }
 
@@ -20,15 +20,15 @@ export class TiposService {
     return this.http.get<Tipos[]>(this.URL_API);
   }
 
-  createTipos(tipos:Tipos){
-    return this.http.post(this.URL_API,tipos);
+  createTipos(tipo:Tipos){
+    return this.http.post(this.URL_API,tipo);
   }
 
   deleteTipos(id_tipo:number){
     return this.http.delete(this.URL_API+id_tipo);
   }
 
-  editTipos(tipos:Tipos){
-    return this.http.put(this.URL_API+tipos.id_tipo,tipos);
+  editTipos(tipo:Tipos){
+    return this.http.put(this.URL_API+this.tipo.id_tipo,tipo);
   }
 }

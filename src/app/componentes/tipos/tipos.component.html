@@ -4,13 +4,13 @@
     <div class="col-md-4">
         <div class="card">
             <div class="card-body">
-                <form #tiposForm="ngForm" (ngSubmit)="createTipos(tiposForm)">
-                    <input type="hidden" name="id_tipos" [(ngModel)]="tiposService.tipos.id_tipo">
+                <form #tipoForm="ngForm" (ngSubmit)="createTipos(tipoForm)">
+                    <input type="hidden" name="id_tipos" [(ngModel)]="tiposService.tipo.id_tipo">
                     <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Tipo" name="tipo" [(ngModel)]="tiposService.tipos.tipo">
+                        <input type="text" class="form-control" placeholder="Tipo" name="tipo" [(ngModel)]="tiposService.tipo.tipo">
                     </div>
 
-                    <button type="reset" class="btn btn-secondary m-2" (click)="formReset(tiposForm)">
+                    <button type="reset" class="btn btn-secondary m-2" (click)="formReset(tipoForm)">
                         Limpiar
                     </button>
 
@@ -33,13 +33,13 @@
         </thead>
 
         <tbody>
-            <tr *ngFor="let item of tiposService.tipo">
+            <tr *ngFor="let item of tiposService.tipos">
                 <td>{{ item.id_tipo }}</td>
                 <td>{{ item.tipo }}</td>
                 <td>
                     <button class="btn btn-secondary btn-sm" (click)="editTipos(item)">
-                        <i class="material-icons">edit</i>
-                    </button>
+                        <i class="material-icons">Edit</i>
+                    </button>  
                     <button class="btn btn-danger btn-sm" (click)="deleteTipos(item.id_tipo)">
                         <i class="material-icons">delete</i>
                     </button>

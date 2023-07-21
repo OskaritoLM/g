@@ -1,6 +1,6 @@
 import { Component,OnInit } from '@angular/core';
 import { TiposService } from 'src/app/services/tipos.service';
-import { Tipos } from 'src/models/tipos';
+import { Tipos } from 'src/app/models/tipos';
 import { NgForm } from '@angular/forms';
 
 @Component({
@@ -18,7 +18,7 @@ export class TiposComponent implements OnInit{
   getTipos(){
     this.tiposService.getTipos().subscribe(
       res=>{
-        this.tiposService.tipo = res;
+        this.tiposService.tipos = res;
         console.log(res);
       },
 
@@ -27,7 +27,7 @@ export class TiposComponent implements OnInit{
   }
 
   createTipos(form:NgForm){
-    if(form.value.id_tipo !== 0){
+    if(form.value.id_tipos !== 0){
       alert('Actualizando');
       this.tiposService.editTipos(form.value).subscribe(
         res=> console.log(res),
@@ -58,11 +58,11 @@ export class TiposComponent implements OnInit{
   }
 
   editTipos(tipo:Tipos){
-    this.tiposService.tipos = tipo;
+    this.tiposService.tipo = tipo;
   }
 
   formReset(form:NgForm){
-    this.tiposService.tipos=form.value;
+    this.tiposService.tipo=form.value;
     form.reset();
   }
 
