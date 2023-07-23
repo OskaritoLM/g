@@ -5,7 +5,7 @@
         <div class="card">
             <div class="card-body">
                 <form #tipoForm="ngForm" (ngSubmit)="createTipos(tipoForm)">
-                    <input type="hidden" name="id_tipos" [(ngModel)]="tiposService.tipo.id_tipo">
+                    <input type="hidden" name="id_tipo" [(ngModel)]="tiposService.tipo.id_tipo">
                     <div class="form-group">
                         <input type="text" class="form-control" placeholder="Tipo" name="tipo" [(ngModel)]="tiposService.tipo.tipo">
                     </div>
