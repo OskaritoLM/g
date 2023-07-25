@@ -47,7 +47,10 @@ export class TiposComponent implements OnInit{
   updateTipos(form:NgForm){
     alert('Actualizando');
       this.tiposService.editTipos(form.value).subscribe(
-        res=> console.log(res),
+        res=> {
+          console.log(res);
+          form.reset();
+        },
         err=> console.log(err)
       )
   }
