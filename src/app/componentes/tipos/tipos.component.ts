@@ -26,28 +26,11 @@ export class TiposComponent implements OnInit{
     )
   }
 
-  createTipos2(form:NgForm){
-    if(form.value.id_tipos !== 0){
-      alert('Actualizando');
-      this.tiposService.editTipos(form.value).subscribe(
-        res=> console.log(res),
-        err=> console.log(err)
-      );
-    }else{
-      this.tiposService.createTipos(form.value).subscribe(
-        res=> {
-          this.getTipos();
-          form.reset();
-        },
-        err=> console.log(err)
-      )
-    }
-  }
-
   updateTipos(form:NgForm){
     alert('Actualizando');
       this.tiposService.editTipos(form.value).subscribe(
         res=> {
+          this.getTipos();
           console.log(res);
           form.reset();
         },

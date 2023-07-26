@@ -1,54 +1,55 @@
 <app-navusr></app-navusr>
 
-<div class="row">
-    <div class="col-md-4">
-        <div class="card">
-            <div class="card-body">
-                <form #tipoForm="ngForm">
-                    <input type="hidden" name="id_tipo" [(ngModel)]="tiposService.tipo.id_tipo">
-                    <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Tipo" name="tipo" [(ngModel)]="tiposService.tipo.tipo">
-                    </div>
-
-                    <button type="reset" class="btn btn-secondary m-2" (click)="formReset(tipoForm)">
-                        Limpiar
-                    </button>
-
-                    <button class="btn btn-primary m-2" (click)="createTipos(tipoForm)">
-                        Guardar
-                    </button>
-
-                    <button class="btn btn-primary m-2" (click)="updateTipos(tipoForm)">
-                        Actualizar
-                    </button>
-                </form>
+<div class="card">
+    <div class="card-body">
+        <form #tipoForm="ngForm">
+            <input type="hidden" name="id_tipo" [(ngModel)]="tiposService.tipo.id_tipo">
+            
+            <div class="form-group d-flex mx-auto align-items-center">
+                <input type="text" class="form-control input-sm btexto" placeholder="Tipo" name="tipo" [(ngModel)]="tiposService.tipo.tipo">
+  
+                <button type="reset" class="btn btn-secondary m-2" (click)="formReset(tipoForm)">
+                    Limpiar
+                </button>
+  
+                <button class="btn btn-primary m-2" (click)="createTipos(tipoForm)">
+                    Guardar
+                </button>
+  
+                <button class="btn btn-primary m-2" (click)="updateTipos(tipoForm)">
+                    Actualizar
+                </button>
             </div>
-        </div>
+
+        </form>
     </div>
-
-<div class="col-md-8">
-    <table class="table table-striped">
+</div>  
+  
+<div class="col-md-12">
+    <table class="table table-dark">
         <thead>
-            <tr>
-                <th>ID</th>
-                <th>Nombre Tipo</th>
-                <th>Acciones</th>
-            </tr>
+          <tr>
+            <th>ID</th>
+            <th>Nombre Tipo</th>
+            <th>Acciones</th>
+          </tr>
         </thead>
-
+  
         <tbody>
-            <tr *ngFor="let item of tiposService.tipos">
-                <td>{{ item.id_tipo }}</td>
+            <tr *ngFor="let item of tiposService.tipos" class="table-secondary">
+                <td><b>{{ item.id_tipo }}</b></td>
                 <td>{{ item.tipo }}</td>
                 <td>
-                    <button class="btn btn-secondary btn-sm" (click)="editTipos(item)">
-                        <i class="material-icons">Edit</i>
+                    <button class="btn btn-info btn-sm tbutton" (click)="editTipos(item)">
+                        <i class="fa fa-edit"></i>
                     </button>  
-                    <button class="btn btn-danger btn-sm" (click)="deleteTipos(item.id_tipo)">
-                        <i class="material-icons">delete</i>
+                
+                    <button class="btn btn-danger btn-sm tbutton" (click)="deleteTipos(item.id_tipo)">
+                        <i class="fa fa-trash"></i>
                     </button>
                 </td>
             </tr>
         </tbody>
+
     </table>
 </div>

@@ -1,0 +1,30 @@
+.btexto{
+    height: 45px;
+}
+
+.card {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1%;
+}
+
+.table{
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1%;
+    text-align: center;
+}
+
+.table th, .table td {
+    padding: 8px;
+}
+
+.table td{
+    color: black;
+}
+
+.tbutton{
+    margin: 1%;
+}
