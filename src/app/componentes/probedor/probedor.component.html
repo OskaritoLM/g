@@ -7,21 +7,25 @@
           <th>Existencia</th>
           <th>Cantidad optima</th>
           <th>Precio X unidad</th>
-          <th></th>
-          <th>Sex</th>
-          <th>Example</th>
+         
           
       </thead>
       <tbody>
         <tr>
           <td>1</td>
-          <td>Anna</td>
-          <td>Pitt</td>
-          <td>35</td>
-          <td>New York</td>
-          <td>USA</td>
-          <td>Female</td>
-          
+          <td>maceta #22</td>
+          <td>24</td>
+          <td>200</td>
+          <td>$150</td>
+          <td>maceta #22</td>
+          <td>
+            <button class="btn  btn-sm" style="color: #cc00ff;" (click)="editEmpleado(item)">
+            <i class="material-icons">edit</i>
+        </button>
+        <button class="btn btn-danger btn-sm" (click)="deleteEmpleado(item.id)">
+            <i class="material-icons">delete</i>
+        </button>
+      </td>
         </tr>
       </tbody>
     </table>
