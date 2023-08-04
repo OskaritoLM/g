@@ -11,6 +11,7 @@ import { AdminComponent } from './componentes/admin/admin.component';
 import { LogadmComponent } from './componentes/logadm/logadm.component';
 import { LogprovComponent } from './componentes/logprov/logprov.component';
 import { TiposComponent } from './componentes/tipos/tipos.component';
+import { GalleriaComponent } from './componentes/galleria/galleria.component';
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
@@ -25,6 +26,7 @@ const routes: Routes = [
   {path: 'logadm', component: LogadmComponent},
   {path: 'logprov', component: LogprovComponent},
   {path: 'tipos', component: TiposComponent},
+  {path: 'galeria', component:GalleriaComponent},
 ];
 
 @NgModule({

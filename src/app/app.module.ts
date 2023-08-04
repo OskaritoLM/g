@@ -21,6 +21,7 @@ import { NavusrComponent } from './componentes/navusr/navusr.component';
 import { NavbasicComponent } from './componentes/navbasic/navbasic.component';
 import { TiposComponent } from './componentes/tipos/tipos.component';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { GalleriaComponent } from './componentes/galleria/galleria.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -40,6 +41,7 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
     NavusrComponent,
     NavbasicComponent,
     TiposComponent,
+    GalleriaComponent,
   ],
   imports: [
     BrowserModule,
