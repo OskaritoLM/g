@@ -21,7 +21,10 @@ import { NavusrComponent } from './componentes/navusr/navusr.component';
 import { NavbasicComponent } from './componentes/navbasic/navbasic.component';
 import { TiposComponent } from './componentes/tipos/tipos.component';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { ClientesComponent } from './componentes/clientes/clientes.component';
+import { PedidosComponent } from './componentes/pedidos/pedidos.component';
 import { GalleriaComponent } from './componentes/galleria/galleria.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -41,6 +44,8 @@ import { GalleriaComponent } from './componentes/galleria/galleria.component';
     NavusrComponent,
     NavbasicComponent,
     TiposComponent,
+    ClientesComponent,
+    PedidosComponent,
     GalleriaComponent,
   ],
   imports: [
