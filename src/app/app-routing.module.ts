@@ -11,6 +11,8 @@ import { AdminComponent } from './componentes/admin/admin.component';
 import { LogadmComponent } from './componentes/logadm/logadm.component';
 import { LogprovComponent } from './componentes/logprov/logprov.component';
 import { TiposComponent } from './componentes/tipos/tipos.component';
+import { ClientesComponent } from './componentes/clientes/clientes.component';
+import { PedidosComponent } from './componentes/pedidos/pedidos.component';
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
@@ -25,6 +27,8 @@ const routes: Routes = [
   {path: 'logadm', component: LogadmComponent},
   {path: 'logprov', component: LogprovComponent},
   {path: 'tipos', component: TiposComponent},
+  {path: 'clientes', component: ClientesComponent},
+  {path: 'pedidos', component: PedidosComponent}
 ];
 
 @NgModule({

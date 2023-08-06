@@ -1,0 +1,83 @@
+<app-navusr></app-navusr>
+
+<div class="card">
+    <div class="card-body">
+        <form #clienteForm="ngForm">
+            <input type="hidden" name="id_cliente" [(ngModel)]="clientesService.cliente.id_cliente">
+            
+            <div class="form-group d-flex mx-auto align-items-center">
+                <div class="form-group">
+                    <label for="nombre">Nombre del cliente</label>
+                    <input type="text" class="form-control" id="nombre" name="nom_cliente" [(ngModel)]="clientesService.cliente.nom_cliente" placeholder="Nombre del cliente">
+                </div>
+                <div class="form-group">
+                    <label for="nombre">Correo</label>
+                    <input type="text" class="form-control" id="nombre" name="correo" [(ngModel)]="clientesService.cliente.correo" placeholder="Correo">
+                </div>
+                <div class="form-group">
+                    <label for="nombre">Dirección</label>
+                    <input type="text" class="form-control" id="nombre" name="direccion" [(ngModel)]="clientesService.cliente.direccion" placeholder="Direccion">
+                </div>
+                <div class="form-group">
+                    <label for="nombre">Telefono</label>
+                    <input type="text" class="form-control" id="nombre" name="telefono" [(ngModel)]="clientesService.cliente.telefono" placeholder="Telefono">
+                </div>
+                <div class="form-group">
+                    <label for="nombre">RFC</label>
+                    <input type="text" class="form-control" id="nombre" name="rfc" [(ngModel)]="clientesService.cliente.rfc" placeholder="RFC">
+                </div>
+  
+                <button type="reset" class="btn btn-secondary m-2" (click)="formReset(clienteForm)">
+                    Limpiar
+                </button>
+  
+                <button class="btn btn-primary m-2" (click)="createClientes(clienteForm)">
+                    Guardar
+                </button>
+  
+                <button class="btn btn-primary m-2" (click)="updateClientes(clienteForm)">
+                    Actualizar
+                </button>
+            </div>
+
+        </form>
+    </div>
+</div>
+
+  
+<div class="col-md-12">
+    <table class="table table-dark">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Nombre</th>
+            <th>Correo</th>
+            <th>Direccion</th>
+            <th>Telefono</th>
+            <th>RFC</th>
+            <th>Acciones</th>
+          </tr>
+        </thead>
+  
+        <tbody>
+            <tr *ngFor="let item of clientesService.clientes" class="table-secondary">
+                <td><b>{{ item.id_cliente }}</b></td>
+                <td>{{ item.nom_cliente }}</td>
+                <td>{{ item.correo }}</td>
+                <td>{{ item.direccion }}</td>
+                <td>{{ item.telefono }}</td>
+                <td>{{ item.rfc }}</td>
+                <td>
+                    <button class="btn btn-info btn-sm tbutton" (click)="editClientes(item)">
+                        <i class="fa fa-edit"></i>
+                    </button>  
+                
+                    <button class="btn btn-danger btn-sm tbutton" (click)="deleteClientes(item.id_cliente)">
+                        <i class="fa fa-trash"></i>
+                    </button>
+                </td>
+            </tr>
+        </tbody>
+
+    </table>
+</div>
