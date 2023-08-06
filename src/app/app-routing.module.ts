@@ -13,6 +13,7 @@ import { LogprovComponent } from './componentes/logprov/logprov.component';
 import { TiposComponent } from './componentes/tipos/tipos.component';
 import { ClientesComponent } from './componentes/clientes/clientes.component';
 import { PedidosComponent } from './componentes/pedidos/pedidos.component';
+import { GalleriaComponent } from './componentes/galleria/galleria.component';
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
@@ -29,6 +30,7 @@ const routes: Routes = [
   {path: 'tipos', component: TiposComponent},
   {path: 'clientes', component: ClientesComponent},
   {path: 'pedidos', component: PedidosComponent}
+  {path: 'galeria', component:GalleriaComponent},
 ];
 
 @NgModule({

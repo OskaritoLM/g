@@ -23,6 +23,8 @@ import { TiposComponent } from './componentes/tipos/tipos.component';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { ClientesComponent } from './componentes/clientes/clientes.component';
 import { PedidosComponent } from './componentes/pedidos/pedidos.component';
+import { GalleriaComponent } from './componentes/galleria/galleria.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -44,6 +46,7 @@ import { PedidosComponent } from './componentes/pedidos/pedidos.component';
     TiposComponent,
     ClientesComponent,
     PedidosComponent,
+    GalleriaComponent,
   ],
   imports: [
     BrowserModule,
