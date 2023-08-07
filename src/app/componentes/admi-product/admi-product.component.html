@@ -1,0 +1,73 @@
+<app-navusr></app-navusr>
+
+<div class="card">
+  <div class="card-body">
+      <form #productoForm="ngForm">
+          <input type="hidden" name="id_producto" [(ngModel)]="productosService.producto.id_producto">
+          
+          <div class="form-group d-flex mx-auto align-items-center">
+              <input type="text" class="form-control input-sm btexto" placeholder="Producto" name="descripcion"[(ngModel)]="productosService.producto.descripcion">
+              <input type="text" class="form-control input-sm btexto" placeholder="Tamaño" name="tamano"[(ngModel)]="productosService.producto.tamano">
+              <input type="text" class="form-control input-sm btexto" placeholder="color" name="color"[(ngModel)]="productosService.producto.color">
+              <input type="text" class="form-control input-sm btexto" placeholder="tipo de maceta" name="id_tipo"[(ngModel)]="productosService.producto.id_tipo">
+              <input type="text" class="form-control input-sm btexto" placeholder="imagen" name="imagen"[(ngModel)]="productosService.producto.imagen">
+              <input type="text" class="form-control input-sm btexto" placeholder="precio MY" name="precio_mayoreo"[(ngModel)]="productosService.producto.precio_mayoreo">
+              <input type="text" class="form-control input-sm btexto" placeholder="precio MD" name="precio_menudeo"[(ngModel)]="productosService.producto.precio_menudeo">
+              <input type="text" class="form-control input-sm btexto" placeholder="existencias" name="existencias"[(ngModel)]="productosService.producto.existencias">
+
+
+              <button type="reset" class="btn btn-secondary m-2" (click)="formReset(productoForm)">
+                  Limpiar
+              </button>
+
+              <button class="btn btn-primary m-2" (click)="createProductos(productoForm)">
+                  Guardar
+              </button>
+
+              <button class="btn btn-primary m-2" (click)="updateProductos(productoForm)">
+                  Actualizar
+              </button>
+          </div>
+
+      </form>
+  </div>
+</div>  
+
+    <table class="table-info">
+      <thead>
+        <tr>
+          <th>#####</th>
+          <th>Nombre del Producto</th>
+          <th>Tamaño</th>
+          <th>Color</th>
+          <th> Tipo de producto</th>
+          <th>Imagen</th>
+          <th>Precio por Mayoreo</th>
+          <th>Precio por Menudeo</th>
+          <th>Existencias</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of productosService.productos" class="table-danger">
+          <td><b>{{ item.id_producto }}</b></td>
+          <td>{{ item.descripcion }}</td>
+          <td>{{ item.tamano }}</td>
+          <td>{{ item.color }}</td>
+          <td>{{ item.id_tipo }}</td>
+          <td>{{ item.imagen }}</td>
+          <td>{{ item.precio_mayoreo }}</td>
+          <td>{{ item.precio_menudeo }}</td>
+          <td>{{ item.existencias }}</td>
+          <td>
+              <button class="btn btn-info btn-sm tbutton" (click)="editProductos(item)">
+                  <i class="fa fa-edit"></i>
+              </button>  
+          
+              <button class="btn btn-danger btn-sm tbutton" (click)="deleteProductos(item.id_producto)">
+                  <i class="fa fa-trash"></i>
+              </button>
+          </td>
+      </tr>
+  </tbody>
+
+</table>

@@ -24,7 +24,7 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { ClientesComponent } from './componentes/clientes/clientes.component';
 import { PedidosComponent } from './componentes/pedidos/pedidos.component';
 import { GalleriaComponent } from './componentes/galleria/galleria.component';
-
+import { AdmiProductComponent } from './componentes/admi-product/admi-product.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -47,6 +47,7 @@ import { GalleriaComponent } from './componentes/galleria/galleria.component';
     ClientesComponent,
     PedidosComponent,
     GalleriaComponent,
+    AdmiProductComponent,
   ],
   imports: [
     BrowserModule,

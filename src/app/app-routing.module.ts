@@ -14,6 +14,7 @@ import { TiposComponent } from './componentes/tipos/tipos.component';
 import { ClientesComponent } from './componentes/clientes/clientes.component';
 import { PedidosComponent } from './componentes/pedidos/pedidos.component';
 import { GalleriaComponent } from './componentes/galleria/galleria.component';
+import { AdmiProductComponent } from './componentes/admi-product/admi-product.component';
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
@@ -29,8 +30,9 @@ const routes: Routes = [
   {path: 'logprov', component: LogprovComponent},
   {path: 'tipos', component: TiposComponent},
   {path: 'clientes', component: ClientesComponent},
-  {path: 'pedidos', component: PedidosComponent}
+  {path: 'pedidos', component: PedidosComponent},
   {path: 'galeria', component:GalleriaComponent},
+  {path: 'admi-product', component: AdmiProductComponent}
 ];
 
 @NgModule({
