@@ -25,6 +25,7 @@ import { ClientesComponent } from './componentes/clientes/clientes.component';
 import { PedidosComponent } from './componentes/pedidos/pedidos.component';
 import { GalleriaComponent } from './componentes/galleria/galleria.component';
 import { AdmiProductComponent } from './componentes/admi-product/admi-product.component';
+import { MaterialesComponent } from './componentes/materiales/materiales.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -48,6 +49,7 @@ import { AdmiProductComponent } from './componentes/admi-product/admi-product.co
     PedidosComponent,
     GalleriaComponent,
     AdmiProductComponent,
+    MaterialesComponent,
   ],
   imports: [
     BrowserModule,
