@@ -1,0 +1,71 @@
+<app-navusr></app-navusr>
+
+<div class="card">
+    <div class="card-body">
+        <form #usuarioForm="ngForm">
+            <input type="hidden" name="id_usuario" [(ngModel)]="usuariosService.usuario.id_usuario">
+            
+            <div class="form-group d-flex mx-auto align-items-center">
+                <div class="form-group">
+                    <label for="nombre">Nombre del Usuario</label>
+                    <input type="text" class="form-control" id="nombre" name="nom_usuario" [(ngModel)]="usuariosService.usuario.nom_usuario" placeholder="Nombre del Usuario">
+                </div>
+                <div class="form-group">
+                    <label for="nombre">Clave</label>
+                    <input type="text" class="form-control" id="nombre" name="clave" [(ngModel)]="usuariosService.usuario.clave" placeholder="Clave">
+                </div>
+                <div class="form-group">
+                    <label for="nombre">Correo</label>
+                    <input type="text" class="form-control" id="nombre" name="correo" [(ngModel)]="usuariosService.usuario.correo" placeholder="Correo">
+                </div>
+  
+                <button type="reset" class="btn btn-secondary m-2" (click)="formReset(usuarioForm)">
+                    Limpiar
+                </button>
+  
+                <button class="btn btn-primary m-2" (click)="createUsuarios(usuarioForm)">
+                    Guardar
+                </button>
+  
+                <button class="btn btn-primary m-2" (click)="updateUsuarios(usuarioForm)">
+                    Actualizar
+                </button>
+            </div>
+
+        </form>
+    </div>
+</div>
+
+  
+<div class="col-md-12">
+    <table class="table table-dark">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Nombre del Usuario</th>
+            <th>Clave</th>
+            <th>Correo</th>
+            <th>Acciones</th>
+          </tr>
+        </thead>
+  
+        <tbody>
+            <tr *ngFor="let item of usuariosService.usuarios" class="table-secondary">
+                <td><b>{{ item.id_usuario }}</b></td>
+                <td>{{ item.nom_usuario }}</td>
+                <td>{{ item.clave }}</td>
+                <td>{{ item.correo }}</td>
+                <td>
+                    <button class="btn btn-info btn-sm tbutton" (click)="editUsuarios(item)">
+                        <i class="fa fa-edit"></i>
+                    </button>  
+                
+                    <button class="btn btn-danger btn-sm tbutton" (click)="deleteUsuarios(item.id_usuario)">
+                        <i class="fa fa-trash"></i>
+                    </button>
+                </td>
+            </tr>
+        </tbody>
+
+    </table>
+</div>

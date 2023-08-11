@@ -26,6 +26,8 @@ import { PedidosComponent } from './componentes/pedidos/pedidos.component';
 import { GalleriaComponent } from './componentes/galleria/galleria.component';
 import { AdmiProductComponent } from './componentes/admi-product/admi-product.component';
 import { MaterialesComponent } from './componentes/materiales/materiales.component';
+import { UsuariosComponent } from './componentes/usuarios/usuarios.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -50,6 +52,7 @@ import { MaterialesComponent } from './componentes/materiales/materiales.compone
     GalleriaComponent,
     AdmiProductComponent,
     MaterialesComponent,
+    UsuariosComponent,
   ],
   imports: [
     BrowserModule,
