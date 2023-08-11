@@ -63,5 +63,16 @@ h1, h2{
   .btn-custom {
     background-color: #c042b6; /* Color de fondo del botón */
     color: #fff; /* Color del texto del botón */
+    margin-top: 15px;
+  }
+
+  .boton {
+    text-align: center;
+  }
+  
+  .vision-mision-valores {
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 5px;
   }
   
