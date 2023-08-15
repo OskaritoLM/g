@@ -4,5 +4,6 @@ export interface Clientes{
     correo: string,
     direccion: string,
     telefono: string,
-    rfc: string
+    rfc: string,
+    pass: string
 }

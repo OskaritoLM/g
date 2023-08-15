@@ -17,8 +17,6 @@ export class AuthService {
       this.role = 'admin';
     } else if (role === 'proveedor' && usuario === 'noahp@cprueba.com' && contrasena === 'linux') {
       // Lógica para autenticación de proveedor
-    } else if (role === 'cliente' && usuario === 'cliente@gmail.com' && contrasena === 'linux') {
-      // Lógica para autenticación de cliente
     } else {
       // Credenciales inválidas
       this.isLoggedIn = false;
