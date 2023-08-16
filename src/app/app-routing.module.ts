@@ -29,6 +29,8 @@ import { DetallesJarron1Component } from './componentes/detalles-jarron1/detalle
 import { DetallesJarron2Component } from './componentes/detalles-jarron2/detalles-jarron2.component';
 import { DetallesJarron3Component } from './componentes/detalles-jarron3/detalles-jarron3.component';
 import { DetallesJarron4Component } from './componentes/detalles-jarron4/detalles-jarron4.component';
+import { UsuariosComponent } from './componentes/usuarios/usuarios.component'; // Cambia esto al componente correcto
+import { HomeUserComponent } from './componentes/home-user/home-user.component';
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
@@ -61,7 +63,8 @@ const routes: Routes = [
   {path: 'detalles-jarron1', component: DetallesJarron1Component},
   {path: 'detalles-jarron2', component: DetallesJarron2Component},
   {path: 'detalles-jarron3', component: DetallesJarron3Component},
-  {path: 'detalles-jarron4', component: DetallesJarron4Component}
+  {path: 'detalles-jarron4', component: DetallesJarron4Component},
+  {path: 'home-user', component: HomeUserComponent }, // Cambia esto al componente correcto
 ];
 
 

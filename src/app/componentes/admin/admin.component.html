@@ -1,80 +1,48 @@
 <app-navusr></app-navusr>
-
-<div class = "row">
+<div class="container">
+  <div class="row">
+      <div class="col-md-9">
+<div class="row">
   <div class="col-md-2">
     <li class="nav-item dropdown">
-      <a class="nav-link dropdown-toggle" class="btn btn-info btn-lg" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-        Administrar Galeria
-      </a>
-      <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-        <li>
-          <a class="dropdown-item" href="/tipos"> Gestor Tipos </a>
-        </li>
-        <li>
-          <a class="dropdown-item" href="/productos"> Gestor Productos </a>
-        </li>
-      </ul>
+      <button type="button" class="btn btn-warning" href="/tipos">Gestor de tipos</button>
+    </li>
+  </div>
+  <li class="nav-item dropdown">
+    <button type="button" class="btn btn-warning" href="/admi-product">Gestor de Productos</button>
+  </li>
+  <div class="col-md-2">
+    <li class="nav-item dropdown">
+      <button type="button" class="btn btn-warning" href="/clientes">administración de clientes</button>
+    </li>
+    <li class="nav-item dropdown">
+      <button type="button" class="btn btn-warning" href="/pedidos">administración de pedidos</button>
+    </li>
+  </div>
+    <div class="col-md-9">
+    <li class="nav-item dropdown">
+      <button type="button" class="btn btn-warning" href="/Materiales">administración de materiales</button>
+    </li>
+    <li class="nav-item dropdown">
+      <button type="button" class="btn btn-warning" href="/detalles-pedidos">detalle de los pedidos</button>
     </li>
   </div>
 
-  <div class="col-md-2">
-    <li class="nav-item dropdown">
-      <a class="nav-link dropdown-toggle" class="btn btn-info btn-lg" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                 Administrar inventario 
-      </a>
-      <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-        <li><a class="dropdown-item" href="#"> Materia Prima </a></li>
-        <li><a class="dropdown-item" href="#">Agragar Articulo</a></li>
-        <li><hr class="dropdown-divider"></li>
-        <li><a class="dropdown-item" href="#">Baja de Articulo</a></li>
-      </ul>
-    </li>
-  </div>
-    <div class="col-md-2">
-    <li class="nav-item dropdown">
-      <a class="nav-link dropdown-toggle" class="btn btn-info btn-lg" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-        Referido de provedores
-      </a>
-      <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-        <li><a class="dropdown-item" href="#">Material ceramico</a></li>
-        <li><a class="dropdown-item" href="#">Barro</a></li>
-        <li><hr class="dropdown-divider"></li>
-        <li><a class="dropdown-item" href="#">Gas butano</a></li>
-      </ul>
-    </li></div>
-    <div class="col-md-2">
-    <li class="nav-item dropdown">
-      <a class="nav-link dropdown-toggle" class="btn btn-info btn-lg" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-        Solicitud de pedidos
-      </a>
-      <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-        <li><a class="dropdown-item" href="/clientes">Gestionar clientes</a></li>
-        <li><a class="dropdown-item" href="/pedidos">Gestionar pedidos</a></li>
-        <li><hr class="dropdown-divider"></li>
-    </ul>
-    </li>
-    </div>
-  
+  <!-- Agregamos una columna adicional para alinear la card a la derecha -->
+  <div class="col-md-2 offset-md-4">
     <div class="card text-center" style="width: 400px">
       <img class="card-img-top mx-auto" src="assets/usuario.webp" alt="Card image" style="width: 180px; height: 240px;">
       <div class="card-body d-flex flex-column align-items-center">
         <h4 class="card-title">Administrador</h4>
         <p class="card-text">Bienvenido señor admin</p>
         <div class="col-md-12">
-        <a href="#" class="btn btn-info">Cambiar perfil  </a> 
-      </div></div>
-        <div class="col-md-12">
-        <a href="#" class="btn btn-info">Chats  </a> 
+          <a href="#" class="btn btn-info">Cambiar perfil</a>
+        </div>
+      </div>
+      <div class="col-md-12">
+        <a href="#" class="btn btn-info">Chats</a>
         <i class="fa-solid fa-messages"></i>
       </div>
-        
-      </div>
-    </div>
-<div class="card" style="width:400px">
-    <img class="card-img-top" src="img_avatar1.png" alt="Card image">
-    <div class="card-body">
-      <h4 class="card-title">Administrador</h4>
-      <p class="card-text">Bienvenido señor admin</p>
-      <a href="#" class="btn btn-primary">See Profile</a>
     </div>
   </div>
+</div>

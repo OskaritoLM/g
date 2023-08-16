@@ -24,6 +24,7 @@ import { ClientesComponent } from './componentes/clientes/clientes.component';
 import { PedidosComponent } from './componentes/pedidos/pedidos.component';
 import { GalleriaComponent } from './componentes/galleria/galleria.component';
 import { AdmiProductComponent } from './componentes/admi-product/admi-product.component';
+import { MaterialesComponent } from './componentes/materiales/materiales.component';
 import { UsuariosComponent } from './componentes/usuarios/usuarios.component';
 import { ProveedoresComponent } from './componentes/proveedores/proveedores.component';
 import { DecorativosComponent } from './componentes/decorativos/decorativos.component';
@@ -39,6 +40,7 @@ import { DetallesJarron1Component } from './componentes/detalles-jarron1/detalle
 import { DetallesJarron2Component } from './componentes/detalles-jarron2/detalles-jarron2.component';
 import { DetallesJarron3Component } from './componentes/detalles-jarron3/detalles-jarron3.component';
 import { DetallesJarron4Component } from './componentes/detalles-jarron4/detalles-jarron4.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -61,6 +63,7 @@ import { DetallesJarron4Component } from './componentes/detalles-jarron4/detalle
     PedidosComponent,
     GalleriaComponent,
     AdmiProductComponent,
+    MaterialesComponent,
     UsuariosComponent,
     ProveedoresComponent,
     DecorativosComponent,

@@ -20,7 +20,7 @@ export class ProductosService {
 
   public productos:Productos[]=[];
 
-  URL_API='http://locahost:3000/productos/';
+  URL_API='http://locahost:3000/admi-productos/';
   constructor(private http: HttpClient) { }
 
   getProductos(){

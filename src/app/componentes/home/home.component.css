@@ -63,5 +63,49 @@ h1, h2{
   .btn-custom {
     background-color: #c042b6; /* Color de fondo del botón */
     color: #fff; /* Color del texto del botón */
+    margin-top: 15px;
   }
+
+  .boton {
+    text-align: center;
+  }
+  
+  .vision-mision-valores {
+    margin: 20px;
+    padding: 20px;
+
+  }
+  
+  .contenido {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .seccion {
+    flex: 1;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #ce64ff3f;
+  }
+  
+  .seccion h4 {
+    margin: 0 0 10px;
+    color: rgb(255, 255, 255);
+  }
+  
+  .seccion p {
+    margin: 0;
+  }
+  
+  .seccion ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin: 0;
+  }
+  
+  .seccion li {
+    margin-bottom: 5px;
+  }
+  
   
