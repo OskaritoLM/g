@@ -15,7 +15,10 @@ import { ClientesComponent } from './componentes/clientes/clientes.component';
 import { PedidosComponent } from './componentes/pedidos/pedidos.component';
 import { GalleriaComponent } from './componentes/galleria/galleria.component';
 import { AdmiProductComponent } from './componentes/admi-product/admi-product.component';
-import { UsuariosComponent } from './componentes/usuarios/usuarios.component';
+import { UsuariosComponent } from './componentes/usuarios/usuarios.component'; // Cambia esto al componente correcto
+import { HomeUserComponent } from './componentes/home-user/home-user.component';
+
+
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
@@ -34,7 +37,8 @@ const routes: Routes = [
   {path: 'pedidos', component: PedidosComponent},
   {path: 'galeria', component:GalleriaComponent},
   {path: 'admi-product', component: AdmiProductComponent},
-  {path: 'usuarios', component: UsuariosComponent}
+  {path: 'usuarios', component: UsuariosComponent},
+  {path: 'home-user', component: HomeUserComponent }, // Cambia esto al componente correcto
 ];
 
 @NgModule({
