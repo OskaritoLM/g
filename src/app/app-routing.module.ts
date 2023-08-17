@@ -15,7 +15,6 @@ import { ClientesComponent } from './componentes/clientes/clientes.component';
 import { PedidosComponent } from './componentes/pedidos/pedidos.component';
 import { GalleriaComponent } from './componentes/galleria/galleria.component';
 import { AdmiProductComponent } from './componentes/admi-product/admi-product.component';
-import { UsuariosComponent } from './componentes/usuarios/usuarios.component';
 import { ProveedoresComponent } from './componentes/proveedores/proveedores.component';
 import { DetallesDecorativo1Component } from './componentes/detalles-decorativo1/detalles-decorativo1.component';
 import { DetallesDecorativo2Component } from './componentes/detalles-decorativo2/detalles-decorativo2.component';
