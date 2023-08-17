@@ -30,6 +30,7 @@ import { MaterialesComponent } from './componentes/materiales/materiales.compone
 import { UsuariosComponent } from './componentes/usuarios/usuarios.component';
 import { MensajesResComponent } from './componentes/mensajes-res/mensajes-res.component';
 import { MensajesComponent } from './componentes/mensajes/mensajes.component';
+import { AdmiproductComponent } from './componentes/admiproduct/admiproduct.component';
 
 @NgModule({
   declarations: [
@@ -59,6 +60,7 @@ import { MensajesComponent } from './componentes/mensajes/mensajes.component';
     UsuariosComponent,
     MensajesResComponent,
     MensajesComponent,
+    AdmiproductComponent,
   ],
   imports: [
     BrowserModule,
