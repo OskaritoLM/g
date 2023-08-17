@@ -1,13 +1,18 @@
 import { Injectable } from '@angular/core';
 import { Usuarios } from 'src/app/models/usuarios';
 import { HttpClient } from '@angular/common/http'
+import { Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
+
 export class UsuariosService {
   public usuario:Usuarios={
-    id_usuario:0, nom_usuario:'',clave:'',correo:''
+    id_usuario: 0, 
+    nom_usuario: '',
+    clave: '',
+    correo: ''
   };
 
   public usuarios:Usuarios[]=[];
@@ -31,4 +36,11 @@ export class UsuariosService {
   editUsuarios(usuario:Usuarios){
     return this.http.put(this.URL_API+this.usuario.id_usuario,usuario);
   }
+
+  loginUsuarios(correo: string, clave: string): Observable<any>{
+    const credentials = { correo, clave };
+    console.log(this.URL_API + 'login');
+    return this.http.post(this.URL_API + 'login', credentials);
+  }
+
 }

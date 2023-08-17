@@ -1,24 +1,34 @@
 <app-navbasic></app-navbasic>
 
 <div class="card mx-auto">
-    <div class="card-header text-center">
-      <h5 style="color: white">Ingresa como Admin</h5>
-    </div>
+  <div class="card-header text-center">
+    <h5 style="color: white">Inicia como Administrador</h5>
+  </div>
+
+  <form #loginForm="ngForm" (ngSubmit)="verificarCredenciales(loginForm)">
     <div class="card-body">
       <div class="entrada mb-3">
         <i class="fa-regular fa-envelope fa-beat-fade" style="color: #000000;"></i>
-        <input type="email" class="form-control" id="exampleInputEmail1" [(ngModel)]="usuario" placeholder="Correo Electrónico">
+        <input type="email" class="form-control" id="exampleInputEmail1" [(ngModel)]="correo" placeholder="Correo Electronico" name="correo">
       </div>
+
       <div class="entrada mb-3">
         <i class="fa-solid fa-key fa-beat-fade" style="color: #000000;"></i>
-        <input type="password" class="form-control" id="exampleInputPassword1" [(ngModel)]="contrasena" placeholder="Contraseña">
+        <input type="password" class="form-control" id="exampleInputPassword1" [(ngModel)]="clave" placeholder="Contraseña" name="clave">
       </div>
-      <div class="mb-3 form-check">
-        <input type="checkbox" class="form-check-input" id="exampleCheck1">
-        <label class="form-check-label" for="exampleCheck1">Recuérdame</label>
+
+      <div class="error">{{ errorInicioSesion }}</div>
+
+      <br>
+      <button type="submit" class="btn btn-primary">Iniciar Sesión</button>
+      
+      <div id="loginHelp" class="form-text">
+        Que Rollo con el Pollo
       </div>
-      <button type="submit" class="btn btn-primary" (click)="verificarCredenciales()">Iniciar Sesión</button>
-      <div class="error">{{errorInicioSesion}}</div>
     </div>
+  </form>
+
+  <div class="card-footer text-center">
+    <button class="btn btn-primary" (click)="regresar()">Amonos pa tras</button>
   </div>
-  
+</div>
