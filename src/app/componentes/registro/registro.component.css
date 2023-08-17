@@ -22,3 +22,12 @@ i{
 button{
     width: 100%;
 }
+
+.error{
+    text-align: center;
+    color: red;
+}
+
+#registroHelp{
+    text-align: center;
+}

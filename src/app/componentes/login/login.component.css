@@ -22,3 +22,12 @@ i{
 button{
     width: 100%;
 }
+
+.error{
+    text-align: center;
+    color: red;
+}
+
+#loginHelp{
+    text-align: center;
+}
