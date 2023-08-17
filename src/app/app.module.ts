@@ -10,6 +10,7 @@ import { VajillasComponent } from './componentes/vajillas/vajillas.component';
 import { JarronesComponent } from './componentes/jarrones/jarrones.component';
 import { RegistroComponent } from './componentes/registro/registro.component';
 import { AdminComponent } from './componentes/admin/admin.component';
+import { ProbedorComponent } from './componentes/probedor/probedor.component';
 import { LogadmComponent } from './componentes/logadm/logadm.component';
 import { LogprovComponent } from './componentes/logprov/logprov.component';
 import { HomeUserComponent } from './componentes/home-user/home-user.component';
@@ -26,6 +27,8 @@ import { GalleriaComponent } from './componentes/galleria/galleria.component';
 import { AdmiProductComponent } from './componentes/admi-product/admi-product.component';
 import { MaterialesComponent } from './componentes/materiales/materiales.component';
 import { UsuariosComponent } from './componentes/usuarios/usuarios.component';
+import { MensajesResComponent } from './componentes/mensajes-res/mensajes-res.component';
+import { MensajesComponent } from './componentes/mensajes/mensajes.component';
 import { ProveedoresComponent } from './componentes/proveedores/proveedores.component';
 import { DecorativosComponent } from './componentes/decorativos/decorativos.component';
 import { DetallesDecorativo1Component } from './componentes/detalles-decorativo1/detalles-decorativo1.component';
@@ -51,6 +54,7 @@ import { DetallesJarron4Component } from './componentes/detalles-jarron4/detalle
     JarronesComponent,
     RegistroComponent,
     AdminComponent,
+    ProbedorComponent,
     LogadmComponent,
     LogprovComponent,
     HomeUserComponent,
@@ -65,6 +69,8 @@ import { DetallesJarron4Component } from './componentes/detalles-jarron4/detalle
     AdmiProductComponent,
     MaterialesComponent,
     UsuariosComponent,
+    MensajesResComponent,
+    MensajesComponent,
     ProveedoresComponent,
     DecorativosComponent,
     DetallesDecorativo1Component,

@@ -8,6 +8,7 @@ import { JarronesComponent } from './componentes/jarrones/jarrones.component';
 import { LoginComponent } from './componentes/login/login.component';
 import { RegistroComponent } from './componentes/registro/registro.component';
 import { AdminComponent } from './componentes/admin/admin.component';
+import { ProbedorComponent } from './componentes/probedor/probedor.component';
 import { LogadmComponent } from './componentes/logadm/logadm.component';
 import { LogprovComponent } from './componentes/logprov/logprov.component';
 import { TiposComponent } from './componentes/tipos/tipos.component';
@@ -41,13 +42,14 @@ const routes: Routes = [
   {path: 'login', component: LoginComponent},
   {path: 'registro', component:RegistroComponent},
   {path: 'admin', component: AdminComponent},
+  {path: 'probedor', component:ProbedorComponent},
   {path: 'logadm', component: LogadmComponent},
   {path: 'logprov', component: LogprovComponent},
   {path: 'tipos', component: TiposComponent},
   {path: 'clientes', component: ClientesComponent},
   {path: 'pedidos', component: PedidosComponent},
   {path: 'galeria', component:GalleriaComponent},
-  {path: 'admi-product', component: AdmiProductComponent},
+  {path: 'admi_product', component:AdmiProductComponent },
   {path: 'usuarios', component: UsuariosComponent},
   {path: 'proveedores', component: ProveedoresComponent},
   {path: 'decorativos', component: DecorativosComponent},

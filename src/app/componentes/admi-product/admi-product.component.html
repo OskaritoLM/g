@@ -6,14 +6,37 @@
           <input type="hidden" name="id_producto" [(ngModel)]="productosService.producto.id_producto">
           
           <div class="form-group d-flex mx-auto align-items-center">
-              <input type="text" class="form-control input-sm btexto" placeholder="Producto" name="descripcion"[(ngModel)]="productosService.producto.descripcion">
-              <input type="text" class="form-control input-sm btexto" placeholder="Tamaño" name="tamano"[(ngModel)]="productosService.producto.tamano">
-              <input type="text" class="form-control input-sm btexto" placeholder="color" name="color"[(ngModel)]="productosService.producto.color">
-              <input type="text" class="form-control input-sm btexto" placeholder="tipo de maceta" name="id_tipo"[(ngModel)]="productosService.producto.id_tipo">
-              <input type="text" class="form-control input-sm btexto" placeholder="imagen" name="imagen"[(ngModel)]="productosService.producto.imagen">
-              <input type="text" class="form-control input-sm btexto" placeholder="precio MY" name="precio_mayoreo"[(ngModel)]="productosService.producto.precio_mayoreo">
-              <input type="text" class="form-control input-sm btexto" placeholder="precio MD" name="precio_menudeo"[(ngModel)]="productosService.producto.precio_menudeo">
-              <input type="text" class="form-control input-sm btexto" placeholder="existencias" name="existencias"[(ngModel)]="productosService.producto.existencias">
+            <label for="descripcion">Nombre del producto</label>
+            <input type="text" class="form-control" id="nombre" name="descripcion" [(ngModel)]="productosService.producto.descripcion"placeholder="Nombre del Producto">
+        </div>
+        <div class="form-group" >
+            <label for="nombre">Tamaño </label>
+            <input type="text" class="form-control" id="nombre " name="tamano" [(ngModel)]="productosService.producto.tamano"placeholder ="Tamaño" >
+        </div>
+        <div class="form-group" >
+            <label for="nombre">Color </label>
+            <input type="text" class="form-control" id="nombre " name="color" [(ngModel)]="productosService.producto.color"placeholder ="Color" >
+        </div>
+        <div class="form-group" >
+            <label for="nombre">id_tipo</label>
+            <input type="text" class="form-control" id="nombre " name="id_tipo" [(ngModel)]="productosService.producto.id_tipo"placeholder ="id_tipo" >
+        </div>
+        <div class="form-group" >
+            <label for="nombre">imagen</label>
+            <input type="text" class="form-control" id="nombre " name="imagen" [(ngModel)]="productosService.producto.imagen"placeholder ="Imagen" >
+        </div>
+        <div class="form-group" >
+            <label for="nombre">precio_mayoreo</label>
+            <input type="text" class="form-control" id="nombre " name="precio_mayoreo"(ngModel)]="productosService.producto.precio_mayoreo"placeholder ="precio_mayoreo" >
+        </div>
+        <div class="form-group" >
+            <label for="nombre">precio_menudeo</label>
+            <input type="text" class="form-control" id="nombre " name="precio_menudeo"[(ngModel)]="productosService.producto.precio_menudeo"placeholder ="precio_menudeo" >
+        </div>
+        <div class="form-group" >
+            <label for="nombre">existencias</label>
+            <input type="text" class="form-control" id="nombre " name="existencias" [(ngModel)]="productosService.producto.existencias"placeholder ="existencias" >
+        </div>
 
 
               <button type="reset" class="btn btn-secondary m-2" (click)="formReset(productoForm)">
@@ -27,11 +50,10 @@
               <button class="btn btn-primary m-2" (click)="updateProductos(productoForm)">
                   Actualizar
               </button>
-          </div>
+    
 
-      </form>
-  </div>
-</div>  
+
+ 
 <div class="col-md-12">
     <table class="table table-dark">
 
