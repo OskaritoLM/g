@@ -35,7 +35,7 @@ const routes: Routes = [
   {path: 'clientes', component: ClientesComponent},
   {path: 'pedidos', component: PedidosComponent},
   {path: 'galeria', component:GalleriaComponent},
-  {path: 'admi-product', component: AdmiProductComponent},
+  {path: 'admi_product', component:AdmiProductComponent },
   {path: 'usuarios', component: UsuariosComponent}
 ];
 

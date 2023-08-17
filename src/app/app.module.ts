@@ -28,6 +28,8 @@ import { GalleriaComponent } from './componentes/galleria/galleria.component';
 import { AdmiProductComponent } from './componentes/admi-product/admi-product.component';
 import { MaterialesComponent } from './componentes/materiales/materiales.component';
 import { UsuariosComponent } from './componentes/usuarios/usuarios.component';
+import { MensajesResComponent } from './componentes/mensajes-res/mensajes-res.component';
+import { MensajesComponent } from './componentes/mensajes/mensajes.component';
 
 @NgModule({
   declarations: [
@@ -55,6 +57,8 @@ import { UsuariosComponent } from './componentes/usuarios/usuarios.component';
     AdmiProductComponent,
     MaterialesComponent,
     UsuariosComponent,
+    MensajesResComponent,
+    MensajesComponent,
   ],
   imports: [
     BrowserModule,
