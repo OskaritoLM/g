@@ -1,6 +1,9 @@
 import { Component } from '@angular/core';
-import { AuthService } from 'src/app/services/auth.service';
-import { Router } from '@angular/router';
+import { HttpClient } from '@angular/common/http';
+import { Router } from '@angular/router'; // Importa el Router
+import { LoginCredentials } from 'src/app/models/login';
+import { ClientesService } from 'src/app/services/clientes.service'; // Importa el servicio
+import { NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-login',
@@ -8,19 +11,35 @@ import { Router } from '@angular/router';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent {
-  usuario: string = '';
-  contrasena: string = '';
+  correo: string = '';
+  pass: string = '';
   errorInicioSesion: string = '';
-  isLoggedIn: boolean = false; // Inicializar en falso
 
-  constructor(private authService: AuthService, private router: Router){}
+  constructor(private http: HttpClient, private router: Router, private clientesService: ClientesService) {}
 
-  verificarCredenciales() {
-    if (this.usuario === 'cliente@gmail.com' && this.contrasena === 'linux') {
-      this.isLoggedIn = true;
-      this.router.navigate(['/home']);
-    } else {
-      this.errorInicioSesion = 'Tú no eres el admin >:p';
-    }
+  verificarCredenciales(form:NgForm) {
+   /* const credentials: LoginCredentials = {
+      correo: this.correo,
+      pass: this.pass
+    };*/
+
+  
+    this.clientesService.loginClientes(form.value.correo, form.value.pass).subscribe(
+      (res: any) => {
+        // Manejar la respuesta exitosa del servidor
+        console.log(res);
+        if (res.message === 'Autenticación exitosa') {
+          this.router.navigate(['/home-user']);
+        }
+      },
+      (err: any) => {
+        // Manejar errores
+        console.error(err);
+        this.errorInicioSesion = 'Datos Incorrectos';
+      }
+    );
   }
-}
+  regresar() {
+    this.router.navigate(['/home']);
+  }
+}  
