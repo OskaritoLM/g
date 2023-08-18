@@ -8,6 +8,7 @@ import { AuthService } from 'src/app/services/auth.service';
 })
 export class AppComponent {
   isLoggedIn: boolean = false;
+  title = 'cGallery';
 
   constructor(public authService: AuthService) {
     this.isLoggedIn = this.authService.getIsLoggedIn();

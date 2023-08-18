@@ -7,11 +7,11 @@
           
           <div class="form-group d-flex mx-auto align-items-center">
             <label for="descripcion">Nombre del producto</label>
-            <input type="text" class="form-control" id="nombre" name="descripcion" [(ngModel)]="productosService.producto.descripcion"placeholder="Nombre del Producto">
+            <input type="text" class="form-control" id="nombre" name="descripcion" [(ngModel)]="productosService.producto.descripcion" placeholder="Nombre del Producto">
         </div>
         <div class="form-group" >
             <label for="nombre">Tamaño </label>
-            <input type="text" class="form-control" id="nombre " name="tamano" [(ngModel)]="productosService.producto.tamano"placeholder ="Tamaño" >
+            <input type="text" class="form-control" id="nombre " name="tamano" [(ngModel)]="productosService.producto.tamano" placeholder ="Tamaño" >
         </div>
         <div class="form-group" >
             <label for="nombre">Color </label>
@@ -27,7 +27,7 @@
         </div>
         <div class="form-group" >
             <label for="nombre">precio_mayoreo</label>
-            <input type="text" class="form-control" id="nombre " name="precio_mayoreo"(ngModel)]="productosService.producto.precio_mayoreo"placeholder ="precio_mayoreo" >
+            <input type="text" class="form-control" id="nombre " name="precio_mayoreo"[(ngModel)]="productosService.producto.precio_mayoreo"placeholder ="precio_mayoreo" >
         </div>
         <div class="form-group" >
             <label for="nombre">precio_menudeo</label>
@@ -59,7 +59,7 @@
 
       <thead>
         <tr>
-          <th>#####</th>
+          <th>ID</th>
           <th>Nombre del Producto</th>
           <th>Tamaño</th>
           <th>Color</th>

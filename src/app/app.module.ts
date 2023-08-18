@@ -25,12 +25,11 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { ClientesComponent } from './componentes/clientes/clientes.component';
 import { PedidosComponent } from './componentes/pedidos/pedidos.component';
 import { GalleriaComponent } from './componentes/galleria/galleria.component';
-import { AdmiProductComponent } from './componentes/admi-product/admi-product.component';
 import { MaterialesComponent } from './componentes/materiales/materiales.component';
 import { UsuariosComponent } from './componentes/usuarios/usuarios.component';
 import { MensajesResComponent } from './componentes/mensajes-res/mensajes-res.component';
 import { MensajesComponent } from './componentes/mensajes/mensajes.component';
-import { AdmiproductComponent } from './componentes/admiproduct/admiproduct.component';
+import { AdmiProductComponent } from './componentes/admi-product/admi-product.component';
 import { ProveedoresComponent } from './componentes/proveedores/proveedores.component';
 import { DecorativosComponent } from './componentes/decorativos/decorativos.component';
 import { DetallesDecorativo1Component } from './componentes/detalles-decorativo1/detalles-decorativo1.component';
@@ -73,7 +72,7 @@ import { DetallesJarron4Component } from './componentes/detalles-jarron4/detalle
     UsuariosComponent,
     MensajesResComponent,
     MensajesComponent,
-    AdmiproductComponent,
+    AdmiProductComponent,
     ProveedoresComponent,
     DecorativosComponent,
     DetallesDecorativo1Component,
