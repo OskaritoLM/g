@@ -30,6 +30,7 @@ import { DetallesJarron2Component } from './componentes/detalles-jarron2/detalle
 import { DetallesJarron3Component } from './componentes/detalles-jarron3/detalles-jarron3.component';
 import { DetallesJarron4Component } from './componentes/detalles-jarron4/detalles-jarron4.component';
 import { HomeUserComponent } from './componentes/home-user/home-user.component';
+import { UsuariosComponent } from './componentes/usuarios/usuarios.component';
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
