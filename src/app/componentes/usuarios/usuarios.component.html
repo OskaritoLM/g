@@ -12,7 +12,7 @@
                 </div>
                 <div class="form-group">
                     <label for="nombre">Clave</label>
-                    <input type="text" class="form-control" id="nombre" name="clave" [(ngModel)]="usuariosService.usuario.clave" placeholder="Clave">
+                    <input type="password" class="form-control" id="nombre" name="clave" [(ngModel)]="usuariosService.usuario.clave" placeholder="Clave">
                 </div>
                 <div class="form-group">
                     <label for="nombre">Correo</label>
@@ -41,9 +41,7 @@
     <table class="table table-dark">
         <thead>
           <tr>
-            <th>ID</th>
             <th>Nombre del Usuario</th>
-            <th>Clave</th>
             <th>Correo</th>
             <th>Acciones</th>
           </tr>
@@ -51,9 +49,7 @@
   
         <tbody>
             <tr *ngFor="let item of usuariosService.usuarios" class="table-secondary">
-                <td><b>{{ item.id_usuario }}</b></td>
                 <td>{{ item.nom_usuario }}</td>
-                <td>{{ item.clave }}</td>
                 <td>{{ item.correo }}</td>
                 <td>
                     <button class="btn btn-info btn-sm tbutton" (click)="editUsuarios(item)">
@@ -68,4 +64,8 @@
         </tbody>
 
     </table>
+</div>
+
+<div class="boton">
+    <button type="button" class="btn btn-primary" onclick="window.location.href='/admin'">Regresar</button>
 </div>
